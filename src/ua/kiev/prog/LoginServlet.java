@@ -9,12 +9,12 @@ import javax.servlet.http.*;
 
 @SuppressWarnings("serial")
 public class LoginServlet extends HttpServlet {
-	
-	static final String TEMPLATE = "<html>" +
+
+	private static final String TEMPLATE = "<html>" +
 			"<head><title>Prog.kiev.ua</title></head>" +
 			"<body><h1>%s</h1></body></html>";
-	
-	static final Map<String, String> cred = new HashMap<String, String>();
+
+	private static final Map<String, String> cred = new HashMap<String, String>();
 	
 	static {
 		// hardcode login credentials

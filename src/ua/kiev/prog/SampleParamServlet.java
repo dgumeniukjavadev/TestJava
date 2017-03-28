@@ -6,8 +6,8 @@ import javax.servlet.http.*;
 
 @SuppressWarnings("serial")
 public class SampleParamServlet extends HttpServlet {
-	
-	static final String TEMPLATE = "<html>" +
+
+	private static final String TEMPLATE = "<html>" +
 			"<head><title>Prog.kiev.ua</title></head>" +
 			"<body><h1>%s</h1></body></html>";	
 	

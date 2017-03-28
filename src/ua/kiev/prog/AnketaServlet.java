@@ -5,17 +5,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Luka on 30.01.2016.
- */
+
 public class AnketaServlet extends HttpServlet {
-    static final String TEMPLATE = "<html>" +
+    private static final String TEMPLATE = "<html>" +
             "<head><title>Result</title></head>" +
             "<body><h1>%s</h1></body></html>";
 
-    // private boolean fistanswer;
-    // private boolean secondanswer;
-    int[] answers = new int[4];
+    /*
+    private boolean fistanswer;
+    private boolean secondanswer;
+    */
+    private int[] answers;
+
+    public AnketaServlet() {
+        answers = new int[4];
+    }
 
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String fistanswer = req.getParameter("group1");

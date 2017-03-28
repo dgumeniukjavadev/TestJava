@@ -8,8 +8,8 @@ import javax.servlet.http.*;
 
 @SuppressWarnings("serial")
 public class OpenedServlet extends HttpServlet {
-	
-	static final String TEMPLATE = "<html>" +
+
+	private static final String TEMPLATE = "<html>" +
 			"<head><title>Prog.kiev.ua</title></head>" +
 			"<body><h1>Today we are:</h1><h2>%s</h2></body></html>";
 	
